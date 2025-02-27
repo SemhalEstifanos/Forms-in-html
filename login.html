@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #heading {
+            font-size: 35px;
+        }
+
+        .login_form {
+            font-family: sans-serif;
+            font-size: 15px;
+            width: 500px;
+            height: 620px;
+            padding: 40px;
+            box-shadow: #D8D5D5 4px 4px 4px 4px, -4px -4px 4px 4px rgb(221, 218, 218);
+            border-color: #CECACA;
+            margin: 100px auto;
+
+        }
+
+        .login_form input {
+            padding: 16px 15px;
+            border: solid 1px;
+            width: 94%;
+            margin: 10px 0;
+
+        }
+
+        .login-lines {
+            position: relative;
+            margin: 50px auto;
+            text-align: center;
+
+        }
+
+        .login-lines:before {
+            content: " ";
+            display: block;
+            height: 2px;
+            width: 170px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            background: darkgray;
+            margin-bottom: 20px;
+        }
+
+        .login-lines:after {
+            content: " ";
+            display: block;
+            height: 2px;
+            width: 170px;
+            position: absolute;
+            top: 50%;
+            left: 65%;
+            right: 8%;
+            background: darkgrey;
+            margin-bottom: 20px;
+            
+
+
+        }
+
+
+        .login_form input[type=checkbox] {
+            width: 15px;
+            height: 15px;
+
+        }
+
+        .login_form button {
+            text-align: center;
+            background-color: black;
+            font-size: 20px;
+            cursor: pointer;
+            color: white;
+            height: 50px;
+            width: 500px;
+            margin-top: 55px;
+            margin-bottom: 1px;
+        }
+        
+        #signup_button:hover{
+            background-color: rgb(194, 191, 191);
+            color: black;
+            border: 2px solid ;}
+
+
+        i {
+            margin-inline-start: 175px;
+            margin-bottom: 150px;
+        }
+        #google {
+            border: none;
+            width: 30px;
+            height: 30px;
+            box-shadow: rgb(221, 219, 219) 2px 2px 2px 2px, -1px -1px 1px 1px rgb(221, 221, 221);
+            font-size: 30px;
+            padding: 10px;
+            color: black;
+        }
+        #facebook {
+            font-size: 30px;
+            margin-left: 50px;
+            color: black;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <form class="login_form" action="Table.html">
+        <p>Don't have an account? <a href="index.html" style="color: black; text-decoration: none;"><b>Sign Up</b></a> </p>
+        <h1 id="heading"> Sign In</h1>
+        <label for="email"> Email: </label>
+        <br>
+        <input type="email" id="sign up email" name="sign up email" placeholder=" Enter Your email adress">
+        <br>
+        <label for="password"> Password </label>
+        <br>
+        <input type="password" id=" password ID" name="password ID" placeholder=" Enter Your Password"> <br><br>
+        <input type="checkbox">
+        <label for="terms" style="font-size: 14px;"> I've Read And Agreed with<b> The Terms Of Service </b> And our
+        <b>Privacy Policy
+        </b><br>
+        <button type="submit" id="signup_button">Sign In</button>
+        <h3 class="login-lines"> Or Sign Up With </h3>
+        <br>
+        <a href="https://www.google.com/" > <i id="google" class="fa-brands fa-google"></i></a>
+        <a href="https://www.facebook.com/"><i id="facebook" class="fa-brands fa-facebook"></i></a>
+
+
+    </form>
+
+</body>
+</html>
